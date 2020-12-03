@@ -5,6 +5,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'; 
 import './App.css';
 
+import Footer from './Components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+
+
 
 
 class App extends React.Component {
@@ -19,7 +25,7 @@ class App extends React.Component {
       ],
       home: {
         title: "Be Relentless",
-        subtitle: "Projects",
+        subTitle: "Projects",
         text: "Check out my projects below."
       },
       about: {
@@ -44,9 +50,16 @@ class App extends React.Component {
               <Link className="nav-link" to="/">Home</Link>
               <Link className="nav-link" to="/about">About</Link>
               <Link className="nav-link" to="/contact">Contact</Link>
+
             </Nav>
           </Navbar.Collapse>
         </Navbar>
+
+        <Route path="/" exact render={() => <Home title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>}/>
+        <Route path="/about" render={() => <About title={this.state.home.title} />}/>
+        <Route path="/contact" render={() => <Contact title={this.state.home.title} />}/>
+
+        <Footer />
 
       </Container>
        

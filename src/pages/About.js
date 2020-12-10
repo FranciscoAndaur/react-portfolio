@@ -9,17 +9,13 @@ const About = (props) => {
             <Hero title={props.title} />
 
                 <Content>
-                Hello, my name is Francisco.  I'm a full-stack software engineer with experience in Ruby, Ruby on Rails, Javascript, and React.
+                <p>Hello, my name is Francisco.  I'm a full-stack software engineer with experience in Ruby, Ruby on Rails, Javascript, and React. My dream is to live in a cabin in the mountains, but for now, I reside in the Bronx.</p> 
 
-My dream is to live in a cabin in the mountains, but for now, I reside in the Bronx. 
+                <p>After completing a six-month intensive code camp at Flatiron School I've realized that I am passionate about making human connections through technology. Currently learning and gaining more experience with React, Python, Javascript, CSS, and SQL.</p>
 
-After completing a six-month intensive code camp at Flatiron School I've realized that I am passionate about making human connections through technology.  
+                <p>My latest project, Dev Dream, is a dream log for people. You can check it out here, or on the homepage. It is built with React, Redux, and Grommet.io.  However, I will be rebuilding it as a mobile app using Redux in the following months.</p>
 
-Currently learning and gaining more experience with React, Python, Javascript, CSS, and SQL.
-
-My latest project, Dev Dream, is a dream log for people. You can check it out here, or on the homepage. It is built with React, Redux, and Grommet.io.  However, I will be rebuilding it as a mobile app using Redux in the following months.
-
-When I'm not learning something new, I'm probably running or cycling around this wonderful city.
+                <p>When I'm not learning something new, I'm probably running or cycling around this wonderful city.</p>
                 </Content>
             
         </div>
